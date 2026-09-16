@@ -49,13 +49,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -118,13 +118,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\software\programacion\ogre-14.3.4-x64-debug\sdk\include\OGRE;C:\software\programacion\ogre-14.3.4-x64-debug\sdk\include\OGRE\Bites;C:\software\programacion\ogre-14.3.4-x64-debug\sdk\include\OGRE\Overlay;C:\software\programacion\ogre-14.3.4-x64-debug\sdk\include\OGRE\RTShaderSystem;C:\software\programacion\ogre-14.3.4-x64-debug\Dependencies\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE;C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\Bites;C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\Overlay;C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\RTShaderSystem;C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\Dependencies\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\software\programacion\ogre-14.3.4-x64-debug\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>OgreMain_d.lib;OgreBites_d.lib;OgreOverlay_d.lib;OgreRTShaderSystem_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
@@ -140,13 +140,13 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\software\programacion\ogre-14.3.4-x64-release\sdk\include\OGRE;C:\software\programacion\ogre-14.3.4-x64-release\sdk\include\OGRE\Bites;C:\software\programacion\ogre-14.3.4-x64-release\sdk\include\OGRE\Overlay;C:\software\programacion\ogre-14.3.4-x64-release\sdk\include\OGRE\RTShaderSystem;C:\software\programacion\ogre-14.3.4-x64-release\Dependencies\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\claud\Apps\Ogre\ogre-14.3.4-release\sdk\include\OGRE;C:\Users\claud\Apps\Ogre\ogre-14.3.4-release\sdk\include\OGRE\Bites;C:\Users\claud\Apps\Ogre\ogre-14.3.4-release\sdk\include\OGRE\Overlay;C:\Users\claud\Apps\Ogre\ogre-14.3.4-release\sdk\include\OGRE\RTShaderSystem;C:\Users\claud\Apps\Ogre\ogre-14.3.4-release\Dependencies\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\software\programacion\ogre-14.3.4-x64-release\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\claud\Apps\Ogre\ogre-14.3.4-release\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>OgreMain.lib;OgreBites.lib;OgreOverlay.lib;OgreRTShaderSystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
