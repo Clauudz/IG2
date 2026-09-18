@@ -17,6 +17,8 @@
 #include <OgreWindowEventUtilities.h>
 #include <SDL_keycode.h>
 
+#include "Laberinto.h"
+
 
 class IG2Project: public OgreBites::ApplicationContext, OgreBites::InputListener {
 
@@ -42,6 +44,8 @@ protected:
 
     Ogre::SceneNode* mCamNode = nullptr;
     OgreBites::CameraMan* mCamMgr = nullptr;
+
+    Laberinto* lab = nullptr;
 };
 
 #endif

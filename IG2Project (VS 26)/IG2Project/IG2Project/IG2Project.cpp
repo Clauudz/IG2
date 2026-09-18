@@ -22,6 +22,8 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
 
 void IG2Project::shutdown() {
 
+    delete lab;
+
     mShaderGenerator->removeSceneManager(mSM);
     mSM->removeRenderQueueListener(mOverlaySystem);
 
@@ -118,26 +120,26 @@ void IG2Project::setupScene(void) {
     //------------------------------------------------------------------------
     // Creating the floor
 
-    //MeshManager::getSingleton().createPlane("floor", ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
-    //    Plane(Vector3::UNIT_Y, 0),
-    //    1500, 1500, 50, 50, true, 1, 5, 5,
-    //    Vector3::UNIT_Z);
+    MeshManager::getSingleton().createPlane("floor", ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
+        Plane(Vector3::UNIT_Y, 0),
+        1500, 1500, 50, 50, true, 1, 5, 5,
+        Vector3::UNIT_Z);
 
-    //Entity* entFloor = mSM->createEntity("exampleFloor", "floor");
-    //entFloor->setMaterialName("example/stonesFloor");
-    //SceneNode* floorNode = mSM->getRootSceneNode()->createChildSceneNode();
-    //floorNode->attachObject(entFloor);
+    Entity* entFloor = mSM->createEntity("exampleFloor", "floor");
+    entFloor->setMaterialName("example/stonesFloor");
+    SceneNode* floorNode = mSM->getRootSceneNode()->createChildSceneNode();
+    floorNode->attachObject(entFloor);
 
 
     //------------------------------------------------------------------------
    // Creating the dragon
 
-    Ogre::Entity* entDragon = mSM->createEntity("dragon.mesh");
-    Ogre::SceneNode* mDragonNode = mSM->getRootSceneNode()->createChildSceneNode("nDragon");
-    mDragonNode->attachObject(entDragon);
+    //Ogre::Entity* entDragon = mSM->createEntity("dragon.mesh");
+    //Ogre::SceneNode* mDragonNode = mSM->getRootSceneNode()->createChildSceneNode("nDragon");
+    //mDragonNode->attachObject(entDragon);
 
     // Show bounding box
-    mDragonNode->showBoundingBox(true);
+    //mDragonNode->showBoundingBox(true);
 
     // Set position of the dragon
     //mDragonNode->setPosition(x, y, z);
@@ -147,4 +149,8 @@ void IG2Project::setupScene(void) {
 
     //mDragonNode->yaw(Ogre::Degree(-45));
     //mDragonNode->setVisible(false);
+
+    // Create the labyrinth
+    lab = new Laberinto(Vector3(0,0,0), mSM->getRootSceneNode()->createChildSceneNode(), mSM);
+    lab->createLabyrinth("stage1.txt");
 }
