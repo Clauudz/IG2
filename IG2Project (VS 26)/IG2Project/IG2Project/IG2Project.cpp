@@ -16,19 +16,19 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
     }
     else if (evt.keysym.sym == SDLK_UP) {
         cout << "Pressed UP" << endl;
-        sinbadDirectorion = UP;
+        sinbad->setNextDirection(Character::UP);
     }
     else if (evt.keysym.sym == SDLK_DOWN) {
         cout << "Pressed DOWN" << endl;
-        sinbadDirectorion = DOWN;
+        sinbad->setNextDirection(Character::DOWN);
     }
     else if (evt.keysym.sym == SDLK_LEFT) {
         cout << "Pressed LEFT" << endl;
-        sinbadDirectorion = LEFT;
+        sinbad->setNextDirection(Character::LEFT);
     }
     else if (evt.keysym.sym == SDLK_RIGHT) {
         cout << "Pressed RIGHT" << endl;
-        sinbadDirectorion = RIGHT;
+        sinbad->setNextDirection(Character::RIGHT);
     }
 
     return true;
@@ -117,7 +117,7 @@ void IG2Project::setupScene(void) {
     // Creating Sinbad
 
     mSinbadNode = mSM->getRootSceneNode()->createChildSceneNode("nSinbad");
-    sinbad = new IG2Object(Vector3(0, 0, 0),
+    sinbad = new Character(Vector3(0, 0, 0),
         mSinbadNode,
         mSM,
         "Sinbad.mesh");
@@ -169,39 +169,14 @@ void IG2Project::setupScene(void) {
     lab->createLabyrinth("stage1.txt");
 }
 
-Ogre::Vector3 IG2Project::getNexDirVector()
-{
-    Vector3 newDirVector = Vector3::ZERO;
-    if (sinbadDirectorion == RIGHT)
-        newDirVector = Vector3::UNIT_X;
-    else if (sinbadDirectorion == LEFT)
-        newDirVector = Vector3::NEGATIVE_UNIT_X;
-    else if (sinbadDirectorion == DOWN)
-        newDirVector = Vector3::UNIT_Z;
-    else if (sinbadDirectorion == UP)
-        newDirVector = Vector3::NEGATIVE_UNIT_Z;
-
-    return newDirVector;
-}
-
-bool IG2Project::isDirectionModified()
-{
-    return sinbad->getGridOrientation() != getNexDirVector();
-}
-
-Ogre::Quaternion IG2Project::getQuaternionForNewDirection()
-{
-    Vector3 newDirVector = getNexDirVector();
-    Quaternion q = sinbad->getOrientation().getRotationTo(newDirVector);
-    return q;
-}
-
 void IG2Project::frameRendered(const Ogre::FrameEvent& evt) {
 
     if (sinbad != nullptr) {
-        if (!isDirectionModified())
+        /*if (!isDirectionModified())
             sinbad->move(getNexDirVector() * SPEED * evt.timeSinceLastFrame);
         else
-            sinbad->rotate(getQuaternionForNewDirection());
+            sinbad->rotate(getQuaternionForNewDirection());*/
+
+        lab->moveCharacter(sinbad, evt.timeSinceLastFrame);
     }
 }

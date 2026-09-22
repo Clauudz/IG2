@@ -1,6 +1,8 @@
 #pragma once
 
 #include "IG2Object.h"
+#include "Character.h"
+
 #include <string>
 #include <fstream>
 
@@ -18,5 +20,10 @@ private:
 public:
 	Laberinto(Vector3 initPos, SceneNode* node, SceneManager* sceneMng);
 	void createLabyrinth(std::string stageFileName);
+	void moveCharacter(Character* character, Ogre::Real time);
+
+	Block* getBlock(Vector3 position);
+	void stepForward(Character* c, ... , Ogre::Real time);
+	bool blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction);
 };
 

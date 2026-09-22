@@ -19,6 +19,7 @@
 
 #include "IG2Object.h"
 #include "Laberinto.h"
+#include "Character.h"
 
 
 class IG2Project: public OgreBites::ApplicationContext, OgreBites::InputListener {
@@ -29,24 +30,15 @@ public:
 
 protected:
 
-    enum Direction { RIGHT, LEFT, UP, DOWN };
-    Direction sinbadDirectorion = RIGHT;
-
-    const float SPEED = 50.f;
-
     virtual bool keyPressed(const OgreBites::KeyboardEvent& evt);
     virtual void setup();
     virtual void shutdown();
     virtual void setupScene();
 
-    Ogre::Vector3 getNexDirVector();
-    bool isDirectionModified();
-    Ogre::Quaternion getQuaternionForNewDirection();
-
     void frameRendered(const Ogre::FrameEvent& evt);
 
     Ogre::SceneNode* mSinbadNode = nullptr;
-    IG2Object* sinbad = nullptr;
+    Character* sinbad = nullptr;
 
     Ogre::SceneManager* mSM = nullptr;
     OgreBites::TrayManager* mTrayMgr = nullptr;
