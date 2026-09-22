@@ -10,10 +10,25 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
     if (evt.keysym.sym == SDLK_ESCAPE) {
         getRoot()->queueEndRendering();
     }
-
     else if (evt.keysym.sym == SDLK_k) {
         cout << "Position of Sinbad: " << mSinbadNode->getPosition() << endl;
         cout << "Position of the camera: " << mCamNode->getPosition() << endl;
+    }
+    else if (evt.keysym.sym == SDLK_UP) {
+        cout << "Pressed UP" << endl;
+        sinbadDirectorion = UP;
+    }
+    else if (evt.keysym.sym == SDLK_DOWN) {
+        cout << "Pressed DOWN" << endl;
+        sinbadDirectorion = DOWN;
+    }
+    else if (evt.keysym.sym == SDLK_LEFT) {
+        cout << "Pressed LEFT" << endl;
+        sinbadDirectorion = LEFT;
+    }
+    else if (evt.keysym.sym == SDLK_RIGHT) {
+        cout << "Pressed RIGHT" << endl;
+        sinbadDirectorion = RIGHT;
     }
 
     return true;
@@ -23,6 +38,7 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
 void IG2Project::shutdown() {
 
     delete lab;
+    delete sinbad;
 
     mShaderGenerator->removeSceneManager(mSM);
     mSM->removeRenderQueueListener(mOverlaySystem);
@@ -100,19 +116,17 @@ void IG2Project::setupScene(void) {
     //------------------------------------------------------------------------
     // Creating Sinbad
 
-    //Ogre::Entity* ent = mSM->createEntity("Sinbad.mesh");
-    //mSinbadNode = mSM->getRootSceneNode()->createChildSceneNode("nSinbad");
-    //mSinbadNode->attachObject(ent);
+    mSinbadNode = mSM->getRootSceneNode()->createChildSceneNode("nSinbad");
+    sinbad = new IG2Object(Vector3(0, 0, 0),
+        mSinbadNode,
+        mSM,
+        "Sinbad.mesh");
 
     // Show bounding box
-    //mSinbadNode->showBoundingBox(true);
+    mSinbadNode->showBoundingBox(true);
 
-    // Set position of Sinbad
-    //mSinbadNode->setPosition(x, y, z);
-
-    // Set scale of Sinbad
-    //mSinbadNode->setScale(20, 20, 20);
-
+    sinbad->setScale(Ogre::Vector3(2.0, 2.0, 2.0));
+    sinbad->move(Vector3(0, sinbad->calculateBoxSize().y / 2 + 1, 0));
     //mSinbadNode->yaw(Ogre::Degree(-45));
     //mSinbadNode->setVisible(false);    
 
@@ -153,4 +167,41 @@ void IG2Project::setupScene(void) {
     // Create the labyrinth
     lab = new Laberinto(Vector3(0,0,0), mSM->getRootSceneNode()->createChildSceneNode(), mSM);
     lab->createLabyrinth("stage1.txt");
+}
+
+Ogre::Vector3 IG2Project::getNexDirVector()
+{
+    Vector3 newDirVector = Vector3::ZERO;
+    if (sinbadDirectorion == RIGHT)
+        newDirVector = Vector3::UNIT_X;
+    else if (sinbadDirectorion == LEFT)
+        newDirVector = Vector3::NEGATIVE_UNIT_X;
+    else if (sinbadDirectorion == DOWN)
+        newDirVector = Vector3::UNIT_Z;
+    else if (sinbadDirectorion == UP)
+        newDirVector = Vector3::NEGATIVE_UNIT_Z;
+
+    return newDirVector;
+}
+
+bool IG2Project::isDirectionModified()
+{
+    return sinbad->getGridOrientation() != getNexDirVector();
+}
+
+Ogre::Quaternion IG2Project::getQuaternionForNewDirection()
+{
+    Vector3 newDirVector = getNexDirVector();
+    Quaternion q = sinbad->getOrientation().getRotationTo(newDirVector);
+    return q;
+}
+
+void IG2Project::frameRendered(const Ogre::FrameEvent& evt) {
+
+    if (sinbad != nullptr) {
+        if (!isDirectionModified())
+            sinbad->move(getNexDirVector() * SPEED * evt.timeSinceLastFrame);
+        else
+            sinbad->rotate(getQuaternionForNewDirection());
+    }
 }
