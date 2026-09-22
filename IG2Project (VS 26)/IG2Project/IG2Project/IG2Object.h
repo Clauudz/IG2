@@ -10,6 +10,7 @@
 #include <SDL_keycode.h>
 #include <iostream>
 
+
 using namespace Ogre;
 using namespace std;
 
@@ -81,6 +82,12 @@ class IG2Object : public OgreBites::InputListener {
         void pitch (const Radian& angle);
     
         /**
+         * Rotates the node given a quaternion q.
+         * @param q Quaterion used for the rotation.
+         */
+        void rotate (const Quaternion &q);
+    
+        /**
          * Sets a position for this element
          * @param v Vector representing the position of this element.
          */
@@ -94,7 +101,7 @@ class IG2Object : public OgreBites::InputListener {
     
         /**
          * Sets the scale for this element.
-         * @param v Vector representing the scale for this element.
+         * @param vScale Vector representing the scale for this element.
          */
         void setScale(Vector3 vScale);
     
@@ -115,6 +122,13 @@ class IG2Object : public OgreBites::InputListener {
          * @return Vector representing the orientation for this element.
          */
         Vector3 getOrientation ();
+    
+        /**
+         * Gets the orientation of this element in the grid.
+         * @return Vector representing the orientation of this element in the grid.
+         * This is the orientation of the element in the grid, which is different from the orientation of the element in the scene. The orientation of the element in the grid is always a multiple of 90 degrees.          
+         */
+        Vector3 getGridOrientation();
     
         /**
          * Sets the name of the material to be applied to this element.

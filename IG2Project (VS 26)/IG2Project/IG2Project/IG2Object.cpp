@@ -52,6 +52,10 @@ void IG2Object::pitch (const Radian& angle){
     mNode->pitch(angle);
 }
 
+void IG2Object::rotate (const Quaternion &q){
+    mNode->rotate(q);
+}
+
 void IG2Object::setPosition(Vector3 v){
     mNode->setPosition(v);
 }
@@ -70,7 +74,12 @@ void IG2Object::setVisible (bool visible){
 
 Vector3 IG2Object::getOrientation (){    
     Vector3 result = mNode->_getDerivedOrientation() * Vector3::UNIT_Z;
-    return (Vector3(trunc (result.x), trunc (result.y), trunc (result.z)));
+    result.normalise();    
+    return result;
+}
+
+Vector3 IG2Object::getGridOrientation(){
+    return getOrientation().primaryAxis();
 }
 
 void IG2Object::setMaterialName (string materialName){
