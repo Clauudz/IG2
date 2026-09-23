@@ -11,10 +11,11 @@ public:
 
     enum Direction { RIGHT, LEFT, UP, DOWN };
     Direction nextDir = RIGHT;
+    Direction actDir;
 
     void setNextDirection(Direction dir);
 
-    static constexpr float SPEED = 50.f;
+    static constexpr Ogre::Real SPEED = 50.f;
 
     Character(Vector3 initPos, SceneNode* node, SceneManager* sceneMng, String mesh);
 
@@ -22,7 +23,7 @@ public:
     bool isDirectionModified();
     void rotateToNewDirection();
 
-    float getSpeed() { return SPEED; };
+    Ogre::Real getSpeed() { return SPEED; };
     bool is180Turn();
 };
 

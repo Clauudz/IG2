@@ -11,7 +11,6 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 	stageFile.open(stageFileName);
 
 	// Read the number of files and columns
-	int numRows, numCols;
 
 	stageFile >> numRows;
 	stageFile >> numCols;
@@ -25,12 +24,12 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 			stageFile >> cell;
 			// Inserts an empty block!
 			if (cell == EMPTY_BLOCK) {
-				//block = new Block(. . .);
-				//labyrinth->addBlock(block);
+				EmptyBlock* empBlock = new EmptyBlock(Vector3(iRow * BLOCK_SIZE, 0, iCol * BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
+				blocks.push_back(empBlock);	
 			}
 			// Wall block
 			else if (cell == WALL_BLOCK) {
-				Block *block = new Block(Vector3 (iRow * BLOCK_SIZE,0, iCol * BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
+				WallBlock *block = new WallBlock(Vector3 (iRow * BLOCK_SIZE,0, iCol * BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
 				blocks.push_back(block);
 
 				block->setScale(
@@ -87,5 +86,34 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 
 Block* Laberinto::getBlock(Vector3 position)
 {
-	
+	int iRow, iCol;
+
+	iRow = std::round(position.x / BLOCK_SIZE);
+	iCol = std::round(position.z / BLOCK_SIZE);
+
+	int idx = iRow * numCols + iCol;
+
+	return blocks[idx];
+}
+
+bool Laberinto::blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction)
+{
+	if (direction.x != 0.f) {
+		if (direction.x > 0.f) {
+			return difference.x >= BLOCK_SIZE / 2;
+		}
+		else {
+			return difference.x <= -(BLOCK_SIZE / 2);
+		}
+	}
+	else if (direction.z != 0.f) {
+		if (direction.z > 0.f) {
+			return difference.z >= BLOCK_SIZE / 2;
+		}
+		else {
+			return difference.z <= -(BLOCK_SIZE / 2);
+		}
+	}
+
+	return false;
 }

@@ -33,12 +33,19 @@ Ogre::Quaternion Character::getQuaternionForNewDirection()
 
 void Character::rotateToNewDirection()
 {
-    this->rotate(getQuaternionForNewDirection());
+    actDir = nextDir;
+    rotate(getQuaternionForNewDirection());
 }
 
 bool Character::is180Turn()
 {
-    return false;
+    if ((actDir == UP && nextDir == DOWN) ||
+        (actDir == DOWN && nextDir == UP) ||
+        (actDir == RIGHT && nextDir == LEFT) ||
+        (actDir == LEFT && nextDir == RIGHT)) {
+
+        return true;
+    }
 }
 
 void Character::setNextDirection(Direction dir)

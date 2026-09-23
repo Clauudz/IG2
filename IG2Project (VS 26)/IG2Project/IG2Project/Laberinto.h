@@ -12,6 +12,8 @@ class Laberinto : public IG2Object
 private:
 	std::ifstream stageFile;
 
+	int numRows, numCols;
+
 	vector<Block*> blocks;
 
 	const char WALL_BLOCK = 'x';
