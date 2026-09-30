@@ -80,7 +80,7 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 
 	// Get the block where the character is placed, and the next one
 	charBlock = this->getBlock(character->getPosition());
-	inFrontBlock = this->getBlock((character->getGridOrientation() * BLOCK_SIZE) + character->getPosition());
+	inFrontBlock = this->getBlock((character->getGridOrientation() * (BLOCK_SIZE / 2.f)) + character->getPosition());
 	// Character does not change its direction -> step forward!
 	if (!character->isDirectionModified())
 		stepForward(character, charBlock, inFrontBlock, time);
@@ -103,6 +103,37 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 	}
 }
 
+/*void Laberinto::moveCharacter(Character* character, Ogre::Real time)
+{
+	Block* charBlock, * inFrontBlock;
+
+	// Get the block where the character is placed, and the next one
+	charBlock = getBlock(character->getPosition());
+	inFrontBlock = getBlock((character->getGridOrientation() * BLOCK_SIZE / 2.f) + character->getPosition());
+
+	if (inFrontBlock->canPassThrough()) {
+		character->move(character->getGridOrientation() * character->getSpeed() * time);
+	}
+	else {
+		character->setPosition(charBlock->getPosition());
+	}
+
+	// if 180 no checks needed
+	if (character->is180Turn()) {
+		character->rotateToNewDirection();
+	}
+	// If turn is not 180, then check the distance to the next block, if near enough, try to turn
+	else if (character->isDirectionModified() &&
+		character->getPosition().distance(charBlock->getPosition()) < character->getSpeed() * time
+		) {
+		Block* desiredBlock = getBlock(charBlock->getPosition() + character->getNexDirVector() * BLOCK_SIZE);
+
+		if (desiredBlock->canPassThrough()) {
+			character->rotateToNewDirection();
+		}
+	}
+}*/
+
 Block* Laberinto::getBlock(Vector3 position)
 {
 	Vector3 fromFirstPosLabToPos = Vector3(position.x - blocks[0]->getPosition().x, 0, position.z - blocks[0]->getPosition().z);
@@ -121,21 +152,6 @@ void Laberinto::stepForward(Character* c, Block* act, Block* sig, Ogre::Real tim
 {
 	if (sig->canPassThrough()) {
 		c->move(c->getGridOrientation() * c->getSpeed() * time);
-	}
-	else {
-		Ogre::Vector3 desp = c->getGridOrientation() * c->getSpeed() * time;
-		Ogre::Vector3 diff = c->getPosition() - act->getPosition();
-		Ogre::Vector3 direction = c->getGridOrientation();
-
-		Ogre::Real distanciaRecorrida = (direction.x != 0.f) ? std::abs(diff.x) : std::abs(diff.z);
-
-		const Ogre::Real EPSILON = 0.01f;
-		Ogre::Real distanciaRestante = std::max((BLOCK_SIZE / 2) - EPSILON - distanciaRecorrida, 0.0f);
-
-		if (desp.length() >= distanciaRestante)
-			c->move(c->getGridOrientation() * distanciaRestante);
-		else
-			c->move(desp);
 	}
 }
 
