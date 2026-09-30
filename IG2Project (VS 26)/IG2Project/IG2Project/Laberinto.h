@@ -34,5 +34,6 @@ public:
 	}
 
 	Character* sinbad = nullptr;
+	Ogre::SceneNode* mSinbadNode = nullptr;
 };
 

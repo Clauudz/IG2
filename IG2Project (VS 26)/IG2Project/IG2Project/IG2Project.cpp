@@ -140,7 +140,11 @@ void IG2Project::setupScene(void) {
     //mDragonNode->setVisible(false);
 
     // Create the labyrinth
-    lab = new Laberinto(Vector3(0,0,0), mSM->getRootSceneNode()->createChildSceneNode(), mSM);
+    mLabNode = mSM->getRootSceneNode()->createChildSceneNode();
+    lab = new Laberinto(Vector3(0,0,0), mLabNode, mSM);
+    mLabNode = mSM->getRootSceneNode()->createChildSceneNode();
+
+    mLabNode->showBoundingBox(true);
     lab->createLabyrinth("stage1.txt");
 
     addInputListener(lab);

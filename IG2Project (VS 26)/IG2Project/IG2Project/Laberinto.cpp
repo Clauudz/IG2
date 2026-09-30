@@ -49,11 +49,13 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 
 				empBlock->move(Vector3(0, empBlock->calculateBoxSize().y / 2 + 1, 0));
 
+				mSinbadNode = mNode->createChildSceneNode("nSinbad");
 				sinbad = new Character(empBlock->getPosition(),
-					mNode->createChildSceneNode("nSinbad"),
+					mSinbadNode,
 					mSM,
 					"Sinbad.mesh");
 
+				mSinbadNode->showBoundingBox(true);
 				sinbad->setScale(Ogre::Vector3(4.0, 4.0, 4.0));
 				sinbad->move(Vector3(0, sinbad->calculateBoxSize().y / 2 + 1, 0));
 			}
@@ -120,15 +122,30 @@ void Laberinto::stepForward(Character* c, Block* act, Block* sig, Ogre::Real tim
 	if (sig->canPassThrough()) {
 		c->move(c->getGridOrientation() * c->getSpeed() * time);
 	}
+	else {
+		Ogre::Vector3 desp = c->getGridOrientation() * c->getSpeed() * time;
+		Ogre::Vector3 diff = c->getPosition() - act->getPosition();
+		Ogre::Vector3 direction = c->getGridOrientation();
+
+		Ogre::Real distanciaRecorrida = (direction.x != 0.f) ? std::abs(diff.x) : std::abs(diff.z);
+
+		const Ogre::Real EPSILON = 0.01f;
+		Ogre::Real distanciaRestante = std::max((BLOCK_SIZE / 2) - EPSILON - distanciaRecorrida, 0.0f);
+
+		if (desp.length() >= distanciaRestante)
+			c->move(c->getGridOrientation() * distanciaRestante);
+		else
+			c->move(desp);
+	}
 }
 
 bool Laberinto::blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction)
 {
-	const Ogre::Real EPSILON = 0.02f;
+	const Ogre::Real EPSILON = 0.01f;
 
 	Ogre::Real componente = (direction.x != 0.f) ? std::abs(difference.x) : std::abs(difference.z);
 
-	return componente >= (BLOCK_SIZE / 2) - EPSILON;
+	return componente >= EPSILON;
 }
 
 bool Laberinto::keyPressed(const OgreBites::KeyboardEvent& evt) {

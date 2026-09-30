@@ -51,6 +51,7 @@ protected:
     OgreBites::CameraMan* mCamMgr = nullptr;
 
     Laberinto* lab = nullptr;
+    Ogre::SceneNode* mLabNode = nullptr;
 };
 
 #endif
