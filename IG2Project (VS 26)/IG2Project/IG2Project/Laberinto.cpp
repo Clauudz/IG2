@@ -59,6 +59,45 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 				sinbad->setScale(Ogre::Vector3(4.0, 4.0, 4.0));
 				sinbad->move(Vector3(0, sinbad->calculateBoxSize().y / 2 + 1, 0));
 			}
+			else if (cell == INVISIBLE_BLOCK) {
+				InvisibleBlock* iBlock = new InvisibleBlock(Vector3(iRow * BLOCK_SIZE, 0, iCol * BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
+				blocks.push_back(iBlock);
+
+				iBlock->setScale(
+					Vector3(
+						BLOCK_SIZE / iBlock->calculateBoxSize().x,
+						BLOCK_SIZE / iBlock->calculateBoxSize().y,
+						BLOCK_SIZE / iBlock->calculateBoxSize().z
+					)
+				);
+				iBlock->move(Vector3(0, iBlock->calculateBoxSize().y / 2 + 1, 0));
+			}
+			else if (cell == FAKE_BLOCK) {
+				FakeBlock* fBlock = new FakeBlock(Vector3(iRow * BLOCK_SIZE, 0, iCol * BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
+				blocks.push_back(fBlock);
+
+				fBlock->setScale(
+					Vector3(
+						BLOCK_SIZE / fBlock->calculateBoxSize().x,
+						BLOCK_SIZE / fBlock->calculateBoxSize().y,
+						BLOCK_SIZE / fBlock->calculateBoxSize().z
+					)
+				);
+				fBlock->move(Vector3(0, fBlock->calculateBoxSize().y / 2 + 1, 0));
+			}
+			else if (cell == BREAKABLE_BLOCK) {
+				BreakableBlock* bBlock = new BreakableBlock(Vector3(iRow * BLOCK_SIZE, 0, iCol * BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
+				blocks.push_back(bBlock);
+
+				bBlock->setScale(
+					Vector3(
+						BLOCK_SIZE / bBlock->calculateBoxSize().x,
+						BLOCK_SIZE / bBlock->calculateBoxSize().y,
+						BLOCK_SIZE / bBlock->calculateBoxSize().z
+					)
+				);
+				bBlock->move(Vector3(0, bBlock->calculateBoxSize().y / 2 + 1, 0));
+			}
 			// Wrong type of block
 			else {
 				ok = false;

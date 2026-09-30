@@ -7,6 +7,7 @@
 #include <OgreMath.h>
 #include <OgreFrameListener.h>
 #include <OgreMeshManager.h>
+#include <OgreTimer.h>
 #include <SDL_keycode.h>
 #include <iostream>
 
