@@ -18,6 +18,7 @@ private:
 
 	const char WALL_BLOCK = 'x';
 	const char EMPTY_BLOCK = 'o';
+	const char SINBAD_CHAR = 'h';
 	const int BLOCK_SIZE = 30;
 public:
 	Laberinto(Vector3 initPos, SceneNode* node, SceneManager* sceneMng);
@@ -25,7 +26,13 @@ public:
 	void moveCharacter(Character* character, Ogre::Real time);
 
 	Block* getBlock(Vector3 position);
-	void stepForward(Character* c, ... , Ogre::Real time);
+	void stepForward(Character* c, Block* act, Block* sig, Ogre::Real time);
 	bool blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction);
+	virtual bool keyPressed(const OgreBites::KeyboardEvent& evt);
+	void frameRendered(const Ogre::FrameEvent& evt) override {
+		moveCharacter(sinbad, evt.timeSinceLastEvent);
+	}
+
+	Character* sinbad = nullptr;
 };
 

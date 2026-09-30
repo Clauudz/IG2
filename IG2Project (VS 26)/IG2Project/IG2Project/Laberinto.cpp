@@ -26,6 +26,8 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 			if (cell == EMPTY_BLOCK) {
 				EmptyBlock* empBlock = new EmptyBlock(Vector3(iRow * BLOCK_SIZE, 0, iCol * BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
 				blocks.push_back(empBlock);	
+
+				empBlock->move(Vector3(0, empBlock->calculateBoxSize().y / 2 + 1, 0));
 			}
 			// Wall block
 			else if (cell == WALL_BLOCK) {
@@ -39,6 +41,21 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 						BLOCK_SIZE/block->calculateBoxSize().z
 					)
 				);
+				block->move(Vector3(0, block->calculateBoxSize().y / 2 + 1, 0));
+			}
+			else if (cell == SINBAD_CHAR) {
+				EmptyBlock* empBlock = new EmptyBlock(Vector3(iRow * BLOCK_SIZE, 0, iCol * BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
+				blocks.push_back(empBlock);
+
+				empBlock->move(Vector3(0, empBlock->calculateBoxSize().y / 2 + 1, 0));
+
+				sinbad = new Character(empBlock->getPosition(),
+					mNode->createChildSceneNode("nSinbad"),
+					mSM,
+					"Sinbad.mesh");
+
+				sinbad->setScale(Ogre::Vector3(4.0, 4.0, 4.0));
+				sinbad->move(Vector3(0, sinbad->calculateBoxSize().y / 2 + 1, 0));
 			}
 			// Wrong type of block
 			else {
@@ -64,7 +81,7 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 	inFrontBlock = this->getBlock((character->getGridOrientation() * BLOCK_SIZE) + character->getPosition());
 	// Character does not change its direction -> step forward!
 	if (!character->isDirectionModified())
-		stepForward(character, . . ., time);
+		stepForward(character, charBlock, inFrontBlock, time);
 	// New direction
 	else {
 		// Check the block in front of the character for the new direction
@@ -80,40 +97,57 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 			character->rotateToNewDirection();
 		// Rotation cannot be performed... check if character can step forward
 		else
-			stepForward(character, . . ., time);
+			stepForward(character, charBlock, inFrontBlock, time);
 	}
 }
 
 Block* Laberinto::getBlock(Vector3 position)
 {
+	Vector3 fromFirstPosLabToPos = Vector3(position.x - blocks[0]->getPosition().x, 0, position.z - blocks[0]->getPosition().z);
+
 	int iRow, iCol;
 
-	iRow = std::round(position.x / BLOCK_SIZE);
-	iCol = std::round(position.z / BLOCK_SIZE);
+	iRow = std::round(fromFirstPosLabToPos.x / BLOCK_SIZE);
+	iCol = std::round(fromFirstPosLabToPos.z / BLOCK_SIZE);
 
 	int idx = iRow * numCols + iCol;
 
 	return blocks[idx];
 }
 
+void Laberinto::stepForward(Character* c, Block* act, Block* sig, Ogre::Real time)
+{
+	if (sig->canPassThrough()) {
+		c->move(c->getGridOrientation() * c->getSpeed() * time);
+	}
+}
+
 bool Laberinto::blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction)
 {
-	if (direction.x != 0.f) {
-		if (direction.x > 0.f) {
-			return difference.x >= BLOCK_SIZE / 2;
-		}
-		else {
-			return difference.x <= -(BLOCK_SIZE / 2);
-		}
+	const Ogre::Real EPSILON = 0.02f;
+
+	Ogre::Real componente = (direction.x != 0.f) ? std::abs(difference.x) : std::abs(difference.z);
+
+	return componente >= (BLOCK_SIZE / 2) - EPSILON;
+}
+
+bool Laberinto::keyPressed(const OgreBites::KeyboardEvent& evt) {
+	if (evt.keysym.sym == SDLK_UP) {
+		cout << "Pressed UP" << endl;
+		sinbad->setNextDirection(Character::UP);
 	}
-	else if (direction.z != 0.f) {
-		if (direction.z > 0.f) {
-			return difference.z >= BLOCK_SIZE / 2;
-		}
-		else {
-			return difference.z <= -(BLOCK_SIZE / 2);
-		}
+	else if (evt.keysym.sym == SDLK_DOWN) {
+		cout << "Pressed DOWN" << endl;
+		sinbad->setNextDirection(Character::DOWN);
+	}
+	else if (evt.keysym.sym == SDLK_LEFT) {
+		cout << "Pressed LEFT" << endl;
+		sinbad->setNextDirection(Character::LEFT);
+	}
+	else if (evt.keysym.sym == SDLK_RIGHT) {
+		cout << "Pressed RIGHT" << endl;
+		sinbad->setNextDirection(Character::RIGHT);
 	}
 
-	return false;
+	return true;
 }

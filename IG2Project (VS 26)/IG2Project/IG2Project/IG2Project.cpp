@@ -14,22 +14,6 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
         cout << "Position of Sinbad: " << mSinbadNode->getPosition() << endl;
         cout << "Position of the camera: " << mCamNode->getPosition() << endl;
     }
-    else if (evt.keysym.sym == SDLK_UP) {
-        cout << "Pressed UP" << endl;
-        sinbad->setNextDirection(Character::UP);
-    }
-    else if (evt.keysym.sym == SDLK_DOWN) {
-        cout << "Pressed DOWN" << endl;
-        sinbad->setNextDirection(Character::DOWN);
-    }
-    else if (evt.keysym.sym == SDLK_LEFT) {
-        cout << "Pressed LEFT" << endl;
-        sinbad->setNextDirection(Character::LEFT);
-    }
-    else if (evt.keysym.sym == SDLK_RIGHT) {
-        cout << "Pressed RIGHT" << endl;
-        sinbad->setNextDirection(Character::RIGHT);
-    }
 
     return true;
 }
@@ -38,7 +22,7 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
 void IG2Project::shutdown() {
 
     delete lab;
-    delete sinbad;
+    //delete sinbad;
 
     mShaderGenerator->removeSceneManager(mSM);
     mSM->removeRenderQueueListener(mOverlaySystem);
@@ -116,17 +100,8 @@ void IG2Project::setupScene(void) {
     //------------------------------------------------------------------------
     // Creating Sinbad
 
-    mSinbadNode = mSM->getRootSceneNode()->createChildSceneNode("nSinbad");
-    sinbad = new Character(Vector3(0, 0, 0),
-        mSinbadNode,
-        mSM,
-        "Sinbad.mesh");
-
-    // Show bounding box
-    mSinbadNode->showBoundingBox(true);
-
-    sinbad->setScale(Ogre::Vector3(2.0, 2.0, 2.0));
-    sinbad->move(Vector3(0, sinbad->calculateBoxSize().y / 2 + 1, 0));
+    //mSinbadNode = mSM->getRootSceneNode()->createChildSceneNode("nSinbad");
+    
     //mSinbadNode->yaw(Ogre::Degree(-45));
     //mSinbadNode->setVisible(false);    
 
@@ -167,16 +142,18 @@ void IG2Project::setupScene(void) {
     // Create the labyrinth
     lab = new Laberinto(Vector3(0,0,0), mSM->getRootSceneNode()->createChildSceneNode(), mSM);
     lab->createLabyrinth("stage1.txt");
+
+    addInputListener(lab);
 }
 
 void IG2Project::frameRendered(const Ogre::FrameEvent& evt) {
 
-    if (sinbad != nullptr) {
-        /*if (!isDirectionModified())
+   /*if (sinbad != nullptr) {
+        if (!isDirectionModified())
             sinbad->move(getNexDirVector() * SPEED * evt.timeSinceLastFrame);
         else
-            sinbad->rotate(getQuaternionForNewDirection());*/
+            sinbad->rotate(getQuaternionForNewDirection());
 
-        lab->moveCharacter(sinbad, evt.timeSinceLastFrame);
-    }
+            lab->moveCharacter(sinbad, evt.timeSinceLastFrame);
+   }*/
 }

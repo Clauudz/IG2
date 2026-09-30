@@ -38,7 +38,7 @@ protected:
     void frameRendered(const Ogre::FrameEvent& evt);
 
     Ogre::SceneNode* mSinbadNode = nullptr;
-    Character* sinbad = nullptr;
+    //Character* sinbad = nullptr;
 
     Ogre::SceneManager* mSM = nullptr;
     OgreBites::TrayManager* mTrayMgr = nullptr;
