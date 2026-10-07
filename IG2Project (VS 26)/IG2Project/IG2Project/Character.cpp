@@ -46,6 +46,8 @@ bool Character::is180Turn()
 
         return true;
     }
+    else return false;
+
 }
 
 void Character::setNextDirection(Direction dir)

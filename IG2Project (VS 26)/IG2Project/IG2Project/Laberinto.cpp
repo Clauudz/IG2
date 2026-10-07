@@ -118,13 +118,26 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 	Block* charBlock, *inFrontBlock;
 
 	// Get the block where the character is placed, and the next one
-	charBlock = this->getBlock(character->getPosition());
-	inFrontBlock = this->getBlock((character->getGridOrientation() * (BLOCK_SIZE / 2.f)) + character->getPosition());
-	// Character does not change its direction -> step forward!
-	if (!character->isDirectionModified())
-		stepForward(character, charBlock, inFrontBlock, time);
+	charBlock = getBlock(character->getPosition());
+	inFrontBlock = getBlock((character->getGridOrientation() * BLOCK_SIZE / 2.f) + character->getPosition());
+	/*// Character does not change its direction -> step forward!
+	if (!character->isDirectionModified())*/
+	stepForward(character, charBlock, inFrontBlock, time);
 	// New direction
-	else {
+
+	//180?
+	if (character->is180Turn())
+		character->rotateToNewDirection();
+	else if (character->isDirectionModified() &&
+		character->getPosition().distance(charBlock->getPosition()) < character->getSpeed() * time) {
+		Block* wantedBlock = getBlock(charBlock->getPosition() + character->getNexDirVector() * BLOCK_SIZE);
+
+		if (wantedBlock->canPassThrough()) {
+			character->rotateToNewDirection();
+		}
+	}
+
+	/*else {
 		// Check the block in front of the character for the new direction
 		Block* newDirBlock = this->getBlock(character->getPosition() + (character->getNexDirVector() * BLOCK_SIZE));
 		// New position of the character after moving... (for checking if the center of the block is reached)
@@ -139,39 +152,8 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 		// Rotation cannot be performed... check if character can step forward
 		else
 			stepForward(character, charBlock, inFrontBlock, time);
-	}
+	}*/
 }
-
-/*void Laberinto::moveCharacter(Character* character, Ogre::Real time)
-{
-	Block* charBlock, * inFrontBlock;
-
-	// Get the block where the character is placed, and the next one
-	charBlock = getBlock(character->getPosition());
-	inFrontBlock = getBlock((character->getGridOrientation() * BLOCK_SIZE / 2.f) + character->getPosition());
-
-	if (inFrontBlock->canPassThrough()) {
-		character->move(character->getGridOrientation() * character->getSpeed() * time);
-	}
-	else {
-		character->setPosition(charBlock->getPosition());
-	}
-
-	// if 180 no checks needed
-	if (character->is180Turn()) {
-		character->rotateToNewDirection();
-	}
-	// If turn is not 180, then check the distance to the next block, if near enough, try to turn
-	else if (character->isDirectionModified() &&
-		character->getPosition().distance(charBlock->getPosition()) < character->getSpeed() * time
-		) {
-		Block* desiredBlock = getBlock(charBlock->getPosition() + character->getNexDirVector() * BLOCK_SIZE);
-
-		if (desiredBlock->canPassThrough()) {
-			character->rotateToNewDirection();
-		}
-	}
-}*/
 
 Block* Laberinto::getBlock(Vector3 position)
 {
@@ -191,6 +173,9 @@ void Laberinto::stepForward(Character* c, Block* act, Block* sig, Ogre::Real tim
 {
 	if (sig->canPassThrough()) {
 		c->move(c->getGridOrientation() * c->getSpeed() * time);
+	}
+	else {
+		c->setPosition(act->getPosition());
 	}
 }
 
