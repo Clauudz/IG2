@@ -2,6 +2,7 @@
 
 #include "IG2Object.h"
 
+class Laberinto;
 class Character: public IG2Object
 {
 private:
@@ -15,15 +16,14 @@ public:
 
     void setNextDirection(Direction dir);
 
-    static constexpr Ogre::Real SPEED = 50.f;
-
     Character(Vector3 initPos, SceneNode* node, SceneManager* sceneMng, String mesh);
+    virtual void update(Laberinto* lab, float dt) {};
 
     Ogre::Vector3 getNexDirVector();
     bool isDirectionModified();
     void rotateToNewDirection();
 
-    Ogre::Real getSpeed() { return SPEED; };
+    virtual Real getSpeed() const { return 50.f; };
     bool is180Turn();
 };
 

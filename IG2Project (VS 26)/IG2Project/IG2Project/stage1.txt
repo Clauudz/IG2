@@ -3,7 +3,7 @@
 xxxxxxxxxxxxxxxxxxx
 xooooooooxoooooooox
 xoxxoxxxoxoxxxoxxox
-xooooooooooooooooox
+xooooooooovooooooox
 xoxxoxoxxxxxoxoxxox
 xooooxoooxoooxoooox
 xxxxoxxxoxoxxxoxxxx
@@ -11,7 +11,7 @@ xxxxoxoooooooxoxxxx
 xxxxoooxxxxxoooxxxx
 xxxxoxoooooooxoxxxx
 xxxxoxoxxxxxoxoxxxx
-xooooooooxoooooooox
+xovooooooxoooooooox
 xoxxoxxxoxoxxxoxxox
 xooxooooohoooooxoox
 xxoxoxoxxxxxoxoxoxx
