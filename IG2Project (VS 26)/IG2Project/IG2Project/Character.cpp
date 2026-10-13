@@ -1,4 +1,5 @@
 #include "Character.h"
+#include "Block.h"
 
 Character::Character(Vector3 initPos, SceneNode* node, SceneManager* sceneMng, String mesh) : IG2Object(initPos, node, sceneMng, mesh)
 {
@@ -48,6 +49,13 @@ bool Character::is180Turn()
     }
     else return false;
 
+}
+
+Ogre::Real Character::distanciaXZ(Block* b)
+{
+    Vector3 d = getPosition() - b->getPosition();
+    d.y = 0;
+    return d.length();
 }
 
 void Character::setNextDirection(Direction dir)

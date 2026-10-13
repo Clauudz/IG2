@@ -147,11 +147,13 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 	stepForward(character, charBlock, inFrontBlock, time);
 	// New direction
 
+
+	//character->getPosition().distance(charBlock->getPosition())
 	//180?
 	if (character->is180Turn())
 		character->rotateToNewDirection();
 	else if (character->isDirectionModified() &&
-		character->getPosition().distance(charBlock->getPosition()) < character->getSpeed() * time) {
+		character->distanciaXZ(charBlock) < character->getSpeed() * time) {
 		Block* wantedBlock = getBlock(charBlock->getPosition() + character->getNexDirVector() * Config::BLOCK_SIZE);
 
 		if (wantedBlock->canPassThrough()) {
@@ -197,7 +199,8 @@ void Laberinto::stepForward(Character* c, Block* act, Block* sig, Ogre::Real tim
 		c->move(c->getGridOrientation() * c->getSpeed() * time);
 	}
 	else {
-		c->setPosition(act->getPosition());
+		Vector3 p = act->getPosition();
+		c->setPosition({p.x, c->getPosition().y, p.z});
 	}
 }
 

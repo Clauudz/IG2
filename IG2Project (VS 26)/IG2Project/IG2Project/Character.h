@@ -2,6 +2,7 @@
 
 #include "IG2Object.h"
 
+class Block;
 class Laberinto;
 class Character: public IG2Object
 {
@@ -25,5 +26,6 @@ public:
 
     virtual Real getSpeed() const { return 50.f; };
     bool is180Turn();
+    Ogre::Real distanciaXZ(Block* b);
 };
 

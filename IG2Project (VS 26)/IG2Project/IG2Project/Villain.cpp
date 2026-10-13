@@ -14,7 +14,7 @@ Villain::Villain(Vector3 initPos, SceneNode* node, SceneManager* sceneMng, Strin
 void Villain::update(Laberinto* lab, Real dt)
 {
 	Block* vilBlock = lab->getBlock(getPosition());
-	bool isIntersection = getPosition().distance(vilBlock->getPosition()) < getSpeed() * dt;
+    bool isIntersection = distanciaXZ(vilBlock) < (getSpeed() * dt) / 2;
 
 	if (!isIntersection) return;
 
