@@ -81,6 +81,22 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 				//v->setScale(Ogre::Vector3(0.5, 0.5, 0.5));
 				v->move(Vector3(0, v->calculateBoxSize().y / 2 + 1, 0));
 			}
+			else if (cell == Config::SPECIAL_VILLAIN_CHAR) {
+				EmptyBlock* empBlock = new EmptyBlock(Vector3(iRow * Config::BLOCK_SIZE, 0, iCol * Config::BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
+				blocks.push_back(empBlock);
+
+				empBlock->move(Vector3(0, empBlock->calculateBoxSize().y / 2 + 1, 0));
+
+				Ogre::SceneNode* mVilNode = mNode->createChildSceneNode();
+				Villain* v = new SpecialVillain(empBlock->getPosition(),
+					mVilNode,
+					mSM);
+
+				vils.push_back(v);
+				mVilNode->showBoundingBox(true);
+				//v->setScale(Ogre::Vector3(0.5, 0.5, 0.5));
+				//v->move(Vector3(0, v->calculateBoxSize().y / 2 + 1, 0));
+			}
 			else if (cell == Config::INVISIBLE_BLOCK) {
 				InvisibleBlock* iBlock = new InvisibleBlock(Vector3(iRow * Config::BLOCK_SIZE, 0, iCol * Config::BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
 				blocks.push_back(iBlock);
@@ -242,6 +258,7 @@ void Laberinto::frameRendered(const Ogre::FrameEvent& evt)
 		b->update(evt.timeSinceLastFrame);
 
 	moveCharacter(sinbad, evt.timeSinceLastFrame);
+	//r->update(evt.timeSinceLastFrame);
 	for (Villain* v : vils) {
 		v->update(this, evt.timeSinceLastFrame);
 		moveCharacter(v, evt.timeSinceLastFrame);
