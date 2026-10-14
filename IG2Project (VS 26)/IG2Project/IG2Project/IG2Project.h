@@ -43,9 +43,9 @@ protected:
     Ogre::SceneManager* mSM = nullptr;
     OgreBites::TrayManager* mTrayMgr = nullptr;
 
-    Ogre::Light* light = nullptr;
+   /* Ogre::Light* light = nullptr;
     Ogre::SceneNode* mLightParent = nullptr;
-    Ogre::SceneNode* mLightNode = nullptr;
+    Ogre::SceneNode* mLightNode = nullptr;*/
 
     Ogre::SceneNode* mCamNode = nullptr;
     OgreBites::CameraMan* mCamMgr = nullptr;

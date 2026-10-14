@@ -27,6 +27,11 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 	stageFile >> muro;
 	stageFile >> suelo;
 
+	//luz
+	std::string luz;
+
+	stageFile >> luz;
+
 	int iRow = 0;
 	bool ok = true;
 	while (iRow < numRows && ok) {
@@ -159,6 +164,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 	mNode->setPosition(mNode->getPosition() - labSize/2);
 	createFloor(suelo);
 	showCurrentInfo();
+	createLight(luz);
 
 	stageFile.close();
 }
@@ -193,6 +199,33 @@ void Laberinto::showCurrentInfo()
 	ss << "Lives: " << getHero()->getVidas() << endl;
 	ss << "Points: " << getHero()->getPuntos() << endl;
 	text->setText(ss.str());
+}
+
+void Laberinto::createLight(const std::string& light)
+{
+	Light* luz = mSM->createLight("luzLaberinto");
+
+	SceneNode* nodoLuz = (light == "directional") ? mNode->createChildSceneNode() : sinbad->createChildSceneNode();
+	nodoLuz->attachObject(luz);
+
+	if (light == "directional") {
+		luz->setType(Ogre::Light::LT_DIRECTIONAL);
+		nodoLuz->setDirection({ -1, -1, -1 });
+	}
+	else if (light == "point") {
+		luz->setType(Light::LT_POINT);
+		luz->setAttenuation(325.f, 1.f, 0.014f, 0.0007f);
+		nodoLuz->setPosition({ 0, Config::BLOCK_SIZE/4, 0 });
+	}
+	else if (light == "spot") {
+		luz->setType(Light::LT_SPOTLIGHT);
+		nodoLuz->setDirection({ 0, -1, 0 }, Node::TS_WORLD);
+		luz->setSpotlightRange(Ogre::Degree(40.f), Ogre::Degree(60.f));
+		nodoLuz->setPosition({0, 3 * Config::BLOCK_SIZE / 4, 0});
+	}
+
+	luz->setDiffuseColour(0.75, 0.75, 0.75);
+	luz->setSpecularColour(0.5, 0.5, 0.5);
 }
 
 void Laberinto::moveCharacter(Character* character, Ogre::Real time)

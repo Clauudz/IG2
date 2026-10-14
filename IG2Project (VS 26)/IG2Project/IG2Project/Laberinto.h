@@ -30,6 +30,7 @@ private:
 
 	void createFloor(const std::string& floorMat);
 	void showCurrentInfo();
+	void createLight(const std::string& light);
 
 public:
 	Laberinto(Vector3 initPos, SceneNode* node, SceneManager* sceneMng, OgreBites::Label* l, OgreBites::TextBox* t);

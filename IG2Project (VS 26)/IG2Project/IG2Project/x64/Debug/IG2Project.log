@@ -378,296 +378,100 @@ C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\Bites\OgreTrays.h(12
       C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
       vea la declaración de 'Ogre::Vector<2,Ogre::Real>'
   
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,86): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,86): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,86): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,86): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,86): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,56): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,56): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,56): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,56): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(39,56): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,81): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,81): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,81): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,81): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,81): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,52): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,52): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,52): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,52): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(46,52): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,86): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,86): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,86): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,86): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,86): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,56): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,56): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,56): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,56): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(60,56): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,86): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,86): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,86): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,86): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,86): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,56): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,56): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,56): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,56): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(77,56): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,86): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,86): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,86): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,86): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,86): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,56): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,56): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,56): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,56): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(95,56): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,92): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,92): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,92): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,92): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,92): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,62): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,62): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,62): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,62): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(111,62): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,82): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,82): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,82): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,82): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,82): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,52): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,52): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,52): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,52): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(124,52): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,92): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,92): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,92): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,92): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,92): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,62): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,62): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,62): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,62): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(137,62): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,59): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,59): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,59): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,59): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,59): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,26): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,26): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,26): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,26): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(158,26): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(171,13): warning C4244: 'inicializando': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(172,13): warning C4244: 'inicializando': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(176,43): warning C4244: 'argumento': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(176,34): warning C4244: 'argumento': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(248,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(249,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  Villain.cpp
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(120,30): warning C4251: "Ogre::VectorBase<2,Ogre::Real>::ZERO": "Ogre::Vector<2,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<2,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<2,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(121,30): warning C4251: "Ogre::VectorBase<2,Ogre::Real>::UNIT_X": "Ogre::Vector<2,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<2,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<2,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(122,30): warning C4251: "Ogre::VectorBase<2,Ogre::Real>::UNIT_Y": "Ogre::Vector<2,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<2,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<2,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(123,30): warning C4251: "Ogre::VectorBase<2,Ogre::Real>::NEGATIVE_UNIT_X": "Ogre::Vector<2,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<2,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<2,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(124,30): warning C4251: "Ogre::VectorBase<2,Ogre::Real>::NEGATIVE_UNIT_Y": "Ogre::Vector<2,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<2,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<2,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(125,30): warning C4251: "Ogre::VectorBase<2,Ogre::Real>::UNIT_SCALE": "Ogre::Vector<2,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<2,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<2,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(247,30): warning C4251: "Ogre::VectorBase<3,Ogre::Real>::ZERO": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<3,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(248,30): warning C4251: "Ogre::VectorBase<3,Ogre::Real>::UNIT_X": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<3,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(249,30): warning C4251: "Ogre::VectorBase<3,Ogre::Real>::UNIT_Y": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<3,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(250,30): warning C4251: "Ogre::VectorBase<3,Ogre::Real>::UNIT_Z": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<3,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(251,30): warning C4251: "Ogre::VectorBase<3,Ogre::Real>::NEGATIVE_UNIT_X": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<3,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(252,30): warning C4251: "Ogre::VectorBase<3,Ogre::Real>::NEGATIVE_UNIT_Y": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<3,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(253,30): warning C4251: "Ogre::VectorBase<3,Ogre::Real>::NEGATIVE_UNIT_Z": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<3,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(254,30): warning C4251: "Ogre::VectorBase<3,Ogre::Real>::UNIT_SCALE": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<3,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(266,30): warning C4251: "Ogre::VectorBase<4,Ogre::Real>::ZERO": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::VectorBase<4,Ogre::Real>"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePrerequisites.h(261,60):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAxisAlignedBox.h(66,17): warning C4251: "Ogre::AxisAlignedBox::mMinimum": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AxisAlignedBox"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAxisAlignedBox.h(67,17): warning C4251: "Ogre::AxisAlignedBox::mMaximum": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AxisAlignedBox"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgrePlane.h(67,17): warning C4251: "Ogre::Plane::normal": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::Plane"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreSphere.h(56,17): warning C4251: "Ogre::Sphere::mCenter": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::Sphere"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreRay.h(48,17): warning C4251: "Ogre::Ray::mOrigin": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::Ray"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreRay.h(49,17): warning C4251: "Ogre::Ray::mDirection": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::Ray"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreHardwareBuffer.h(173,45): warning C4251: "Ogre::HardwareBuffer::mDelegate": "std::unique_ptr<Ogre::HardwareBuffer,std::default_delete<Ogre::HardwareBuffer>>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::HardwareBuffer"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      vea la declaración de 'std::unique_ptr<Ogre::HardwareBuffer,std::default_delete<Ogre::HardwareBuffer>>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreHardwareBuffer.h(174,45): warning C4251: "Ogre::HardwareBuffer::mShadowBuffer": "std::unique_ptr<Ogre::HardwareBuffer,std::default_delete<Ogre::HardwareBuffer>>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::HardwareBuffer"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      vea la declaración de 'std::unique_ptr<Ogre::HardwareBuffer,std::default_delete<Ogre::HardwareBuffer>>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(74,25): warning C4251: "Ogre::AutoParamDataSource::mCameraPosition": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(75,25): warning C4251: "Ogre::AutoParamDataSource::mCameraPositionObjectSpace": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(80,25): warning C4251: "Ogre::AutoParamDataSource::mShadowCamDepthRanges": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(85,25): warning C4251: "Ogre::AutoParamDataSource::mLodCameraPosition": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(86,25): warning C4251: "Ogre::AutoParamDataSource::mLodCameraPositionObjectSpace": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(108,18): warning C4251: "Ogre::AutoParamDataSource::mFogParams": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(109,18): warning C4251: "Ogre::AutoParamDataSource::mPointParams": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(111,25): warning C4251: "Ogre::AutoParamDataSource::mSceneDepthRange": "Ogre::Vector<4,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<4,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreAutoParamDataSource.h(119,17): warning C4251: "Ogre::AutoParamDataSource::mCameraRelativePosition": "Ogre::Vector<3,Ogre::Real>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::AutoParamDataSource"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreVector.h(277,28):
-      vea la declaración de 'Ogre::Vector<3,Ogre::Real>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\Bites\OgreInput.h(200,33): warning C4251: "OgreBites::InputListenerChain::mListenerChain": "std::vector<OgreBites::InputListener *,std::allocator<OgreBites::InputListener *>>" debe tener una interfaz DLL para que la usen los clientes de "OgreBites::InputListenerChain"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      vea la declaración de 'std::vector<OgreBites::InputListener *,std::allocator<OgreBites::InputListener *>>'
-  
-C:\Users\claud\Apps\Ogre\ogre-14.3.4-debug\sdk\include\OGRE\OgreTimer.h(41,47): warning C4251: "Ogre::Timer::start": "std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>" debe tener una interfaz DLL para que la usen los clientes de "Ogre::Timer"
-  (compilando archivo de origen "Villain.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_chrono.hpp(200,11):
-      vea la declaración de 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>'
-  
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Config.h(3,15): warning C4091: 'static ': se ha omitido a la izquierda de 'Config' cuando no hay ninguna variable declarada
-  (compilando archivo de origen "Villain.cpp")
-  
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,49): warning C4305: 'argumento': truncamiento de 'double' a 'T'
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,49): warning C4305:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,49): warning C4305:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,49): warning C4305:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,49): warning C4305:         ]
-  (compilando archivo de origen "Villain.cpp")
-  
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,44): warning C4305: 'argumento': truncamiento de 'double' a 'T'
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,44): warning C4305:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,44): warning C4305:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,44): warning C4305:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,44): warning C4305:         ]
-  (compilando archivo de origen "Villain.cpp")
-  
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,39): warning C4305: 'argumento': truncamiento de 'double' a 'T'
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,39): warning C4305:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,39): warning C4305:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,39): warning C4305:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Villain.h(55,39): warning C4305:         ]
-  (compilando archivo de origen "Villain.cpp")
-  
-  Generando código...
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,86): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,86): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,86): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,86): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,86): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,56): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,56): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,56): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,56): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(44,56): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,81): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,81): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,81): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,81): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,81): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,52): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,52): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,52): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,52): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(51,52): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,86): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,86): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,86): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,86): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,86): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,56): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,56): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,56): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,56): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(65,56): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,86): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,86): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,86): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,86): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,86): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,56): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,56): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,56): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,56): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(82,56): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,86): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,86): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,86): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,86): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,86): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,56): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,56): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,56): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,56): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(100,56): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,92): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,92): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,92): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,92): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,92): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,62): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,62): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,62): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,62): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(116,62): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,82): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,82): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,82): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,82): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,82): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,52): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,52): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,52): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,52): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(129,52): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,92): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,92): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,92): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,92): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,92): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,62): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,62): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,62): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,62): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(142,62): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,59): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,59): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,59): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,59): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,59): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,26): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,26): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,26): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,26): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(163,26): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(177,13): warning C4244: 'inicializando': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(178,13): warning C4244: 'inicializando': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(182,43): warning C4244: 'argumento': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(182,34): warning C4244: 'argumento': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(281,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(282,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   IG2Project.vcxproj -> C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\x64\Debug\IG2Project.exe
