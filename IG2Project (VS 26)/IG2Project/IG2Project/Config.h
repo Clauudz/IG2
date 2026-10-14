@@ -3,6 +3,8 @@
 static struct Config
 {
 	static constexpr int BLOCK_SIZE = 30;
+	static constexpr int LIFES = 3;
+
 	static constexpr char WALL_BLOCK = 'x';
 	static constexpr char EMPTY_BLOCK = 'o';
 	static constexpr char SINBAD_CHAR = 'h';
@@ -11,4 +13,8 @@ static struct Config
 	static constexpr char INVISIBLE_BLOCK = 'i';
 	static constexpr char FAKE_BLOCK = 'f';
 	static constexpr char BREAKABLE_BLOCK = 'b';
+
+	static constexpr const char* SPECIAL_VILLAIN_MAT = "Metal";
+	static constexpr const char* ROTATINGPART_1_MAT = "Ajedrez";
+	static constexpr const char* ROTATINGPART_2_MAT = "Water";
 };

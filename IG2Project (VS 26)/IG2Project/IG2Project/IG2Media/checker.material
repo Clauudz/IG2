@@ -1,0 +1,9 @@
+material Ajedrez{
+    technique { 
+	pass {  
+	    texture_unit {
+		texture checker.png
+	    }
+	}
+    }
+}

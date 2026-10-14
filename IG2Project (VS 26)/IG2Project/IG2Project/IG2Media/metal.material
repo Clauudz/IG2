@@ -1,0 +1,9 @@
+material Metal{
+    technique { 
+	pass {  
+	    texture_unit {
+		texture Chrome.jpg
+	    }
+	}
+    }
+}

@@ -5,6 +5,8 @@
 #include <string>
 #include <fstream>
 
+namespace OgreBites { class Label; class TextBox; }
+
 class SpecialVillain;
 class Character;
 class Villain;
@@ -21,8 +23,16 @@ private:
 
 	bool fin;
 
+	IG2Object* floor = nullptr;
+
+	OgreBites::Label* label;
+	OgreBites::TextBox* text;
+
+	void createFloor(const std::string& floorMat);
+	void showCurrentInfo();
+
 public:
-	Laberinto(Vector3 initPos, SceneNode* node, SceneManager* sceneMng);
+	Laberinto(Vector3 initPos, SceneNode* node, SceneManager* sceneMng, OgreBites::Label* l, OgreBites::TextBox* t);
 
 	void createLabyrinth(std::string stageFileName);
 	void moveCharacter(Character* character, Ogre::Real time);

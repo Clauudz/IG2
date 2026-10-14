@@ -1,5 +1,6 @@
 #pragma once
 #include "Character.h"
+#include "Config.h"
 
 class Villain : public Character
 {
@@ -15,7 +16,7 @@ class RotatingPart : public IG2Object {
 public:
     RotatingPart(Vector3 pos, SceneNode* node, SceneManager* sm,
         String mesh, int count, Real radius, Real itemScale,
-        Real degPerSec, int intervalMs) : IG2Object(pos, node, sm), speed(degPerSec), intervalMs(intervalMs)
+        Real degPerSec, int intervalMs, const std::string& matName) : IG2Object(pos, node, sm), speed(degPerSec), intervalMs(intervalMs)
     {
         for (int i = 0; i < count; ++i) {
             Real angle = Ogre::Math::TWO_PI * i / count;
@@ -23,6 +24,7 @@ public:
 
             auto item = std::make_unique<IG2Object>(offset, mNode->createChildSceneNode(), sm, mesh);
             item->setScale(Vector3(itemScale, itemScale, itemScale));
+            item->setMaterialName(matName);
             items.push_back(std::move(item));
         }
     }
@@ -44,12 +46,15 @@ private:
 class SpecialVillain : public Villain
 {
 public:
-    SpecialVillain(Vector3 initPos, SceneNode* node, SceneManager* sceneMng) : Villain(initPos, node, sceneMng, "robot.mesh"),
+    SpecialVillain(Vector3 initPos, SceneNode* node, SceneManager* sceneMng) : Villain(initPos, node, sceneMng, "ninja.mesh"),
         partA(Vector3(0, 20, 0), mNode->createChildSceneNode(), sceneMng,
-            "ninja.mesh", 5, 30, 0.5f, 90.f, 2000),
-        partB(Vector3(0, 40, 0), mNode->createChildSceneNode(), sceneMng,
-            "fish.mesh", 5, 50, 4.f, -60.f, 1500)
-    {}
+            "Barrel.mesh", 5, 30, 4.f, 90.f, 2000, Config::ROTATINGPART_1_MAT),
+        partB(Vector3(0, 120, 0), mNode->createChildSceneNode(), sceneMng,
+            "fish.mesh", 5, 30, 4.f, -60.f, 1500, Config::ROTATINGPART_2_MAT)
+    {
+        mNode->setScale(Ogre::Vector3(0.3, 0.3, 0.3));
+        setMaterialName(Config::SPECIAL_VILLAIN_MAT);
+    }
 
     void update(Laberinto* lab, Real dt) override {
         Villain::update(lab, dt);

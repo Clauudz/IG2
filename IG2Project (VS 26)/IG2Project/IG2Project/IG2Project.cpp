@@ -53,6 +53,9 @@ void IG2Project::setup(void) {
     mTrayMgr->showFrameStats(OgreBites::TL_BOTTOMLEFT);
     addInputListener(mTrayMgr);
 
+    /*mTrayMgr->createLabel(OgreBites::TL_BOTTOMRIGHT, "Nombre", "Stage", 250.f);
+    mTrayMgr->createTextBox(OgreBites::TL_BOTTOMRIGHT, "Info", "Game info here: ", 250.f, 90.f);*/
+
     // Adds the listener for this object
     addInputListener(this);
     setupScene();
@@ -86,7 +89,7 @@ void IG2Project::setupScene(void) {
     //------------------------------------------------------------------------
     // Creating the light
 
-    //mSM->setAmbientLight(ColourValue(0.5, 0.5, 0.5));
+    mSM->setAmbientLight(ColourValue(0.5, 0.5, 0.5));
     
     Light* luz = mSM->createLight("Luz");
     luz->setType(Ogre::Light::LT_DIRECTIONAL);
@@ -109,7 +112,7 @@ void IG2Project::setupScene(void) {
     //------------------------------------------------------------------------
     // Creating the floor
 
-    MeshManager::getSingleton().createPlane("floor", ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
+   /* MeshManager::getSingleton().createPlane("floor", ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
         Plane(Vector3::UNIT_Y, 0),
         1500, 1500, 50, 50, true, 1, 5, 5,
         Vector3::UNIT_Z);
@@ -117,7 +120,7 @@ void IG2Project::setupScene(void) {
     Entity* entFloor = mSM->createEntity("exampleFloor", "floor");
     entFloor->setMaterialName("example/stonesFloor");
     SceneNode* floorNode = mSM->getRootSceneNode()->createChildSceneNode();
-    floorNode->attachObject(entFloor);
+    floorNode->attachObject(entFloor);*/
 
 
     //------------------------------------------------------------------------
@@ -139,13 +142,18 @@ void IG2Project::setupScene(void) {
     //mDragonNode->yaw(Ogre::Degree(-45));
     //mDragonNode->setVisible(false);
 
+    //create widgets
+    OgreBites::Label *label = mTrayMgr->createLabel(OgreBites::TL_BOTTOMRIGHT, "Nombre", "Stage", 250.f);
+    OgreBites::TextBox *text = mTrayMgr->createTextBox(OgreBites::TL_BOTTOMRIGHT, "Info", "Game info here: ", 250.f, 100.f);
+
     // Create the labyrinth
     mLabNode = mSM->getRootSceneNode()->createChildSceneNode();
-    lab = new Laberinto(Vector3(0,0,0), mLabNode, mSM);
+    lab = new Laberinto(Vector3(0,0,0), mLabNode, mSM, label, text);
     mLabNode = mSM->getRootSceneNode()->createChildSceneNode();
 
     mLabNode->showBoundingBox(true);
     lab->createLabyrinth("stage1.txt");
+    //lab->createFloor("example/stonesFloor");
 
     addInputListener(lab);
 }

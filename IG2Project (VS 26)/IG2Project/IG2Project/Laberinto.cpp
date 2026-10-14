@@ -4,8 +4,10 @@
 #include "Hero.h"
 #include "Villain.h"
 #include "Config.h"
+#include "OgreTrays.h"
 
-Laberinto::Laberinto(Vector3 initPos, SceneNode* node, SceneManager* sceneMng) : IG2Object(initPos, node, sceneMng), fin(false)
+Laberinto::Laberinto(Vector3 initPos, SceneNode* node, SceneManager* sceneMng, OgreBites::Label* l, OgreBites::TextBox* t) : IG2Object(initPos, node, sceneMng),
+	fin(false), label(l), text(t)
 {
 }
 
@@ -17,6 +19,13 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 
 	stageFile >> numRows;
 	stageFile >> numCols;
+
+	// materiales
+	std::string muro;
+	std::string suelo;
+
+	stageFile >> muro;
+	stageFile >> suelo;
 
 	int iRow = 0;
 	bool ok = true;
@@ -45,6 +54,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 					)
 				);
 				block->move(Vector3(0, block->calculateBoxSize().y / 2 + 1, 0));
+				block->setMaterialName(muro);
 			}
 			else if (cell == Config::SINBAD_CHAR) {
 				EmptyBlock* empBlock = new EmptyBlock(Vector3(iRow * Config::BLOCK_SIZE, 0, iCol * Config::BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
@@ -56,7 +66,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 				sinbad = new Hero(empBlock->getPosition(),
 					mSinbadNode,
 					mSM,
-					"Sinbad.mesh", 3); // 3 vidas
+					"Sinbad.mesh", Config::LIFES);
 
 				mSinbadNode->showBoundingBox(true);
 				//sinbad->setScale(Ogre::Vector3(4.0, 4.0, 4.0));
@@ -147,8 +157,42 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 
 	Vector3 labSize(numRows * Config::BLOCK_SIZE, 0, numCols * Config::BLOCK_SIZE);
 	mNode->setPosition(mNode->getPosition() - labSize/2);
+	createFloor(suelo);
+	showCurrentInfo();
 
 	stageFile.close();
+}
+
+void Laberinto::createFloor(const std::string& floorMat)
+{
+	static int contador = 0;
+	std::string name = "floor_" + std::to_string(contador++);// nombre único
+
+	Real width = numRows * Config::BLOCK_SIZE; //x
+	Real depth = numCols * Config::BLOCK_SIZE; //z
+
+	MeshManager::getSingleton().createPlane(name, ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
+		Plane(Vector3::UNIT_Y, 0),
+		width, depth, 50, 50, true, 1, numRows, numCols,
+		Vector3::UNIT_Z);
+
+	// Centro del laberinto en coordenadas locales de mNode
+	Vector3 center((numRows - 1) * Config::BLOCK_SIZE / 2.f, 1, (numCols - 1) * Config::BLOCK_SIZE / 2.f);
+
+	floor = new IG2Object(center, mNode->createChildSceneNode(), mSM, name);
+	floor->setMaterialName(floorMat);
+}
+
+void Laberinto::showCurrentInfo()
+{
+	std::stringstream ss;
+	// Caption
+	label->setCaption("Level 1");
+	// Game status
+	ss.str(std::string());
+	ss << "Lives: " << getHero()->getVidas() << endl;
+	ss << "Points: " << getHero()->getPuntos() << endl;
+	text->setText(ss.str());
 }
 
 void Laberinto::moveCharacter(Character* character, Ogre::Real time)
@@ -274,6 +318,7 @@ void Laberinto::frameRendered(const Ogre::FrameEvent& evt)
 				fin = true;
 				cout << "FIN" << endl;
 			}
+			showCurrentInfo();
 			return;
 		}
 	}

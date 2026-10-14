@@ -1,5 +1,7 @@
 18
 26
+example/stonesFloor
+Grass
 xxxxxxxxxxxxxxxxxxxxxxxxxx
 xoooooxxxxxoooooxxxxooooox
 xoxxxoooooooxxxooooooxxxox
