@@ -35,17 +35,8 @@ protected:
     virtual void shutdown();
     virtual void setupScene();
 
-    void frameRendered(const Ogre::FrameEvent& evt);
-
-    Ogre::SceneNode* mSinbadNode = nullptr;
-    //Character* sinbad = nullptr;
-
     Ogre::SceneManager* mSM = nullptr;
     OgreBites::TrayManager* mTrayMgr = nullptr;
-
-   /* Ogre::Light* light = nullptr;
-    Ogre::SceneNode* mLightParent = nullptr;
-    Ogre::SceneNode* mLightNode = nullptr;*/
 
     Ogre::SceneNode* mCamNode = nullptr;
     OgreBites::CameraMan* mCamMgr = nullptr;

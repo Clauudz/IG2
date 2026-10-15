@@ -2,6 +2,7 @@
 26
 example/stonesFloor
 Grass
+spot
 xxxxxxxxxxxxxxxxxxxxxxxxxx
 xoooooxxxxxoooooxxxxooooox
 xoxxxoooooooxxxooooooxxxox

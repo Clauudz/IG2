@@ -11,7 +11,7 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
         getRoot()->queueEndRendering();
     }
     else if (evt.keysym.sym == SDLK_k) {
-        cout << "Position of Sinbad: " << mSinbadNode->getPosition() << endl;
+        //cout << "Position of Sinbad: " << mSinbadNode->getPosition() << endl;
         cout << "Position of the camera: " << mCamNode->getPosition() << endl;
     }
 
@@ -22,7 +22,6 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
 void IG2Project::shutdown() {
 
     delete lab;
-    //delete sinbad;
 
     mShaderGenerator->removeSceneManager(mSM);
     mSM->removeRenderQueueListener(mOverlaySystem);
@@ -52,9 +51,6 @@ void IG2Project::setup(void) {
     mTrayMgr = new OgreBites::TrayManager("TrayGUISystem", getRenderWindow());
     mTrayMgr->showFrameStats(OgreBites::TL_BOTTOMLEFT);
     addInputListener(mTrayMgr);
-
-    /*mTrayMgr->createLabel(OgreBites::TL_BOTTOMRIGHT, "Nombre", "Stage", 250.f);
-    mTrayMgr->createTextBox(OgreBites::TL_BOTTOMRIGHT, "Info", "Game info here: ", 250.f, 90.f);*/
 
     // Adds the listener for this object
     addInputListener(this);
@@ -90,58 +86,8 @@ void IG2Project::setupScene(void) {
     // Creating the light
 
     mSM->setAmbientLight(ColourValue(0.2, 0.2, 0.2));
-    
-    /*Light* luz = mSM->createLight("Luz");
-    luz->setType(Ogre::Light::LT_DIRECTIONAL);
-    luz->setDiffuseColour(0.75, 0.75, 0.75);
-
-    mLightNode = mSM->getRootSceneNode()->createChildSceneNode("nLuz");
-    mLightNode->attachObject(luz);
-    mLightNode->setDirection(Ogre::Vector3(-1, -1, -1));*/
- 
 
     //------------------------------------------------------------------------
-    // Creating Sinbad
-
-    //mSinbadNode = mSM->getRootSceneNode()->createChildSceneNode("nSinbad");
-    
-    //mSinbadNode->yaw(Ogre::Degree(-45));
-    //mSinbadNode->setVisible(false);    
-
-
-    //------------------------------------------------------------------------
-    // Creating the floor
-
-   /* MeshManager::getSingleton().createPlane("floor", ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
-        Plane(Vector3::UNIT_Y, 0),
-        1500, 1500, 50, 50, true, 1, 5, 5,
-        Vector3::UNIT_Z);
-
-    Entity* entFloor = mSM->createEntity("exampleFloor", "floor");
-    entFloor->setMaterialName("example/stonesFloor");
-    SceneNode* floorNode = mSM->getRootSceneNode()->createChildSceneNode();
-    floorNode->attachObject(entFloor);*/
-
-
-    //------------------------------------------------------------------------
-   // Creating the dragon
-
-    //Ogre::Entity* entDragon = mSM->createEntity("dragon.mesh");
-    //Ogre::SceneNode* mDragonNode = mSM->getRootSceneNode()->createChildSceneNode("nDragon");
-    //mDragonNode->attachObject(entDragon);
-
-    // Show bounding box
-    //mDragonNode->showBoundingBox(true);
-
-    // Set position of the dragon
-    //mDragonNode->setPosition(x, y, z);
-
-    // Set scale of the dragon
-    //mDragonNode->setScale(20, 20, 20);
-
-    //mDragonNode->yaw(Ogre::Degree(-45));
-    //mDragonNode->setVisible(false);
-
     //create widgets
     OgreBites::Label *label = mTrayMgr->createLabel(OgreBites::TL_BOTTOMRIGHT, "Nombre", "Stage", 250.f);
     OgreBites::TextBox *text = mTrayMgr->createTextBox(OgreBites::TL_BOTTOMRIGHT, "Info", "Game info here: ", 250.f, 100.f);
@@ -153,19 +99,6 @@ void IG2Project::setupScene(void) {
 
     mLabNode->showBoundingBox(true);
     lab->createLabyrinth("stage1.txt");
-    //lab->createFloor("example/stonesFloor");
 
     addInputListener(lab);
-}
-
-void IG2Project::frameRendered(const Ogre::FrameEvent& evt) {
-
-   /*if (sinbad != nullptr) {
-        if (!isDirectionModified())
-            sinbad->move(getNexDirVector() * SPEED * evt.timeSinceLastFrame);
-        else
-            sinbad->rotate(getQuaternionForNewDirection());
-
-            lab->moveCharacter(sinbad, evt.timeSinceLastFrame);
-   }*/
 }

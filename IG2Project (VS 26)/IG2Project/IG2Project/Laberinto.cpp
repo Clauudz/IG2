@@ -73,8 +73,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 					mSM,
 					"Sinbad.mesh", Config::LIFES);
 
-				mSinbadNode->showBoundingBox(true);
-				//sinbad->setScale(Ogre::Vector3(4.0, 4.0, 4.0));
+				//mSinbadNode->showBoundingBox(true);
 				sinbad->move(Vector3(0, sinbad->calculateBoxSize().y / 2 + 1, 0));
 				sinbad->setInitialPosition(sinbad->getPosition());
 			}
@@ -92,8 +91,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 
 				vils.push_back(v);
 
-				mVilNode->showBoundingBox(true);
-				//v->setScale(Ogre::Vector3(0.5, 0.5, 0.5));
+				//mVilNode->showBoundingBox(true);
 				v->move(Vector3(0, v->calculateBoxSize().y / 2 + 1, 0));
 			}
 			else if (cell == Config::SPECIAL_VILLAIN_CHAR) {
@@ -108,9 +106,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 					mSM);
 
 				vils.push_back(v);
-				mVilNode->showBoundingBox(true);
-				//v->setScale(Ogre::Vector3(0.5, 0.5, 0.5));
-				//v->move(Vector3(0, v->calculateBoxSize().y / 2 + 1, 0));
+				//mVilNode->showBoundingBox(true);
 			}
 			else if (cell == Config::INVISIBLE_BLOCK) {
 				InvisibleBlock* iBlock = new InvisibleBlock(Vector3(iRow * Config::BLOCK_SIZE, 0, iCol * Config::BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
@@ -124,6 +120,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 					)
 				);
 				iBlock->move(Vector3(0, iBlock->calculateBoxSize().y / 2 + 1, 0));
+				iBlock->setMaterialName(muro);
 			}
 			else if (cell == Config::FAKE_BLOCK) {
 				FakeBlock* fBlock = new FakeBlock(Vector3(iRow * Config::BLOCK_SIZE, 0, iCol * Config::BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
@@ -137,6 +134,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 					)
 				);
 				fBlock->move(Vector3(0, fBlock->calculateBoxSize().y / 2 + 1, 0));
+				fBlock->setMaterialName(muro);
 			}
 			else if (cell == Config::BREAKABLE_BLOCK) {
 				BreakableBlock* bBlock = new BreakableBlock(Vector3(iRow * Config::BLOCK_SIZE, 0, iCol * Config::BLOCK_SIZE), mNode->createChildSceneNode(), mSM);
@@ -235,11 +233,8 @@ void Laberinto::moveCharacter(Character* character, Ogre::Real time)
 	// Get the block where the character is placed, and the next one
 	charBlock = getBlock(character->getPosition());
 	inFrontBlock = getBlock((character->getGridOrientation() * Config::BLOCK_SIZE / 2.f) + character->getPosition());
-	/*// Character does not change its direction -> step forward!
-	if (!character->isDirectionModified())*/
+	// Character does not change its direction -> step forward!
 	stepForward(character, charBlock, inFrontBlock, time);
-	// New direction
-
 
 	//character->getPosition().distance(charBlock->getPosition())
 	//180?
@@ -335,7 +330,6 @@ void Laberinto::frameRendered(const Ogre::FrameEvent& evt)
 		b->update(evt.timeSinceLastFrame);
 
 	moveCharacter(sinbad, evt.timeSinceLastFrame);
-	//r->update(evt.timeSinceLastFrame);
 	for (Villain* v : vils) {
 		v->update(this, evt.timeSinceLastFrame);
 		moveCharacter(v, evt.timeSinceLastFrame);

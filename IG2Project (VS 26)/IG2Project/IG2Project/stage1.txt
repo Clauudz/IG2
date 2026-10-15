@@ -2,7 +2,7 @@
 19
 example/stonesFloor
 Grass
-spot
+directional
 xxxxxxxxxxxxxxxxxxx
 xooooooooxoooooooox
 xoxxoxxxoxoxxxoxxox
@@ -10,11 +10,11 @@ xooooooooovooooooox
 xoxxoxoxxxxxoxoxxox
 xooooxoooxoooxoooox
 xxxxoxxxoxoxxxoxxxx
-xxxxoxoooooooxoxxxx
+xxxxoxoooooooxoixxx
 xxxxoooxxxxxoooxxxx
 xxxxoxoooooooxoxxxx
 xxxxoxoxxxxxoxoxxxx
-xoVooooooxoooooooox
+xoVoofoooxoooooooox
 xoxxoxxxoxoxxxoxxox
 xooxooooohoooooxoox
 xxoxoxoxxxxxoxoxoxx
