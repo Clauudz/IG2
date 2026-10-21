@@ -46,7 +46,7 @@ private:
 class SpecialVillain : public Villain
 {
 public:
-    SpecialVillain(Vector3 initPos, SceneNode* node, SceneManager* sceneMng) : Villain(initPos, node, sceneMng, "ninja.mesh"),
+    SpecialVillain(Vector3 initPos, SceneNode* node, SceneManager* sceneMng) : Villain(initPos, node, sceneMng, "penguin.mesh"),
         partA(Vector3(0, 20, 0), mNode->createChildSceneNode(), sceneMng,
             "Barrel.mesh", 5, 30, 4.f, 90.f, 2000, Config::ROTATINGPART_1_MAT),
         partB(Vector3(0, 120, 0), mNode->createChildSceneNode(), sceneMng,

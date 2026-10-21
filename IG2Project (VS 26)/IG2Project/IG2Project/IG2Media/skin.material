@@ -1,8 +1,8 @@
-material Metal{
+material Skin{
     technique { 
 	pass {  
 	    texture_unit {
-		texture Chrome.jpg
+		texture penguin.jpg
 	    }
 	}
     }

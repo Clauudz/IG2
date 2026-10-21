@@ -428,50 +428,50 @@ C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(
 C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(98,56): warning C4244:         [
 C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(98,56): warning C4244:             T=Ogre::Real
 C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(98,56): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,92): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,92): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,92): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,92): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,92): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,62): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,62): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,62): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,62): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(112,62): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,82): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,82): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,82): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,82): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,82): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,52): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,52): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,52): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,52): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(126,52): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,92): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,92): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,92): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,92): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,92): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,62): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,62): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,62): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,62): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(140,62): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,59): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,59): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,59): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,59): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,59): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,26): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,26): warning C4244:         with
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,26): warning C4244:         [
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,26): warning C4244:             T=Ogre::Real
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(161,26): warning C4244:         ]
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(175,13): warning C4244: 'inicializando': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,92): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,92): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,92): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,92): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,92): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,62): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,62): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,62): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,62): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(113,62): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,82): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,82): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,82): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,82): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,82): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,52): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,52): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,52): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,52): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(127,52): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,92): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,92): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,92): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,92): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,92): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,62): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,62): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,62): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,62): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(141,62): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,59): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,59): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,59): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,59): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,59): warning C4244:         ]
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,26): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,26): warning C4244:         with
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,26): warning C4244:         [
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,26): warning C4244:             T=Ogre::Real
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(162,26): warning C4244:         ]
 C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(176,13): warning C4244: 'inicializando': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(180,43): warning C4244: 'argumento': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(180,34): warning C4244: 'argumento': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
-C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(276,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(177,13): warning C4244: 'inicializando': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(181,43): warning C4244: 'argumento': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(181,34): warning C4244: 'argumento': conversión de 'int' a 'Ogre::Real'; posible pérdida de datos
 C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(277,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\IG2Project\Laberinto.cpp(278,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   IG2Project.vcxproj -> C:\Users\claud\Repos\IG2\IG2Project (VS 26)\IG2Project\x64\Debug\IG2Project.exe

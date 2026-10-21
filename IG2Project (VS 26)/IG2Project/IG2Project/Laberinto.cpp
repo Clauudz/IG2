@@ -107,6 +107,7 @@ void Laberinto::createLabyrinth(std::string stageFileName)
 
 				vils.push_back(v);
 				//mVilNode->showBoundingBox(true);
+				v->move(Vector3(0, v->calculateBoxSize().y / 2 + 1, 0));
 			}
 			else if (cell == Config::INVISIBLE_BLOCK) {
 				InvisibleBlock* iBlock = new InvisibleBlock(Vector3(iRow * Config::BLOCK_SIZE, 0, iCol * Config::BLOCK_SIZE), mNode->createChildSceneNode(), mSM);

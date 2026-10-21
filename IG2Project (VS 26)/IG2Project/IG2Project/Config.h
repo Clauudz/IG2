@@ -14,7 +14,7 @@ static struct Config
 	static constexpr char FAKE_BLOCK = 'f';
 	static constexpr char BREAKABLE_BLOCK = 'b';
 
-	static constexpr const char* SPECIAL_VILLAIN_MAT = "Metal";
+	static constexpr const char* SPECIAL_VILLAIN_MAT = "Skin";
 	static constexpr const char* ROTATINGPART_1_MAT = "Ajedrez";
 	static constexpr const char* ROTATINGPART_2_MAT = "Water";
 };
