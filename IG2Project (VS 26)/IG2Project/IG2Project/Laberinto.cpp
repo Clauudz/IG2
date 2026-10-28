@@ -293,14 +293,14 @@ void Laberinto::stepForward(Character* c, Block* act, Block* sig, Ogre::Real tim
 	}
 }
 
-bool Laberinto::blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction)
-{
-	const Ogre::Real EPSILON = 0.01f;
-
-	Ogre::Real componente = (direction.x != 0.f) ? std::abs(difference.x) : std::abs(difference.z);
-
-	return componente >= EPSILON;
-}
+//bool Laberinto::blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction)
+//{
+//	const Ogre::Real EPSILON = 0.01f;
+//
+//	Ogre::Real componente = (direction.x != 0.f) ? std::abs(difference.x) : std::abs(difference.z);
+//
+//	return componente >= EPSILON;
+//}
 
 bool Laberinto::keyPressed(const OgreBites::KeyboardEvent& evt) {
 	if (evt.keysym.sym == SDLK_UP) {
