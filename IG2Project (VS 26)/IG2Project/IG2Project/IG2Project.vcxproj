@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AnimacionInicial.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="IG2Object.cpp" />
@@ -28,6 +29,7 @@
     <ClCompile Include="Villain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnimacionInicial.h" />
     <ClInclude Include="Block.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Config.h" />

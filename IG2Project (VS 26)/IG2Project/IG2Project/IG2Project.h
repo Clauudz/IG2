@@ -20,6 +20,7 @@
 #include "IG2Object.h"
 #include "Laberinto.h"
 #include "Character.h"
+#include "AnimacionInicial.h"
 
 
 class IG2Project: public OgreBites::ApplicationContext, OgreBites::InputListener {
@@ -43,6 +44,9 @@ protected:
 
     Laberinto* lab = nullptr;
     Ogre::SceneNode* mLabNode = nullptr;
+
+    AnimacionInicial* ani = nullptr;
+    Ogre::SceneNode* mAniNode = nullptr;
 };
 
 #endif

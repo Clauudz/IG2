@@ -14,6 +14,22 @@ bool IG2Project::keyPressed(const OgreBites::KeyboardEvent& evt) {
         //cout << "Position of Sinbad: " << mSinbadNode->getPosition() << endl;
         cout << "Position of the camera: " << mCamNode->getPosition() << endl;
     }
+    else if (evt.keysym.sym == SDLK_s) {
+        delete ani;
+
+        //create widgets
+        OgreBites::Label* label = mTrayMgr->createLabel(OgreBites::TL_BOTTOMRIGHT, "Nombre", "Stage", 250.f);
+        OgreBites::TextBox* text = mTrayMgr->createTextBox(OgreBites::TL_BOTTOMRIGHT, "Info", "Game info here: ", 250.f, 100.f);
+
+        // Create the labyrinth
+        mLabNode = mSM->getRootSceneNode()->createChildSceneNode();
+        lab = new Laberinto(Vector3(0, 0, 0), mLabNode, mSM, label, text);
+
+        //mLabNode->showBoundingBox(true);
+        lab->createLabyrinth("stage1.txt");
+
+        addInputListener(lab);
+    }
 
     return true;
 }
@@ -88,17 +104,9 @@ void IG2Project::setupScene(void) {
     mSM->setAmbientLight(ColourValue(0.2, 0.2, 0.2));
 
     //------------------------------------------------------------------------
-    //create widgets
-    OgreBites::Label *label = mTrayMgr->createLabel(OgreBites::TL_BOTTOMRIGHT, "Nombre", "Stage", 250.f);
-    OgreBites::TextBox *text = mTrayMgr->createTextBox(OgreBites::TL_BOTTOMRIGHT, "Info", "Game info here: ", 250.f, 100.f);
+    //create the initial scene
+    mAniNode = mSM->getRootSceneNode()->createChildSceneNode();
+    ani = new AnimacionInicial(Vector3(0, 0, 0), mAniNode, mSM);
 
-    // Create the labyrinth
-    mLabNode = mSM->getRootSceneNode()->createChildSceneNode();
-    lab = new Laberinto(Vector3(0,0,0), mLabNode, mSM, label, text);
-    mLabNode = mSM->getRootSceneNode()->createChildSceneNode();
-
-    mLabNode->showBoundingBox(true);
-    lab->createLabyrinth("stage1.txt");
-
-    addInputListener(lab);
+    addInputListener(ani);
 }

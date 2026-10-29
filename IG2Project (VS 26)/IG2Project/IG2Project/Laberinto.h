@@ -40,7 +40,7 @@ public:
 
 	Block* getBlock(Vector3 position);
 	void stepForward(Character* c, Block* act, Block* sig, Ogre::Real time);
-	bool blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction);
+	//bool blockCenterReached(Ogre::Vector3 difference, Ogre::Vector3 direction);
 	virtual bool keyPressed(const OgreBites::KeyboardEvent& evt);
 	void frameRendered(const Ogre::FrameEvent& evt) override;
 
